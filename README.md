@@ -18,8 +18,6 @@ we will make it easier for fans to access a wide range of anime content in one p
 ## Wireframe
 https://www.figma.com/file/wGdL1J6dsbJCFBndGSmNyu/Untitled?type=design&node-id=0%3A1&t=dSOUdVBFEti2BxbW-1
 
-## Design
-https://www.figma.com/file/wGdL1J6dsbJCFBndGSmNyu/Untitled?type=design&node-id=0%3A1&t=dSOUdVBFEti2BxbW-1
 
-## page live 
+## page live  
 https://tripleone101.github.io/AnimePlatform/
