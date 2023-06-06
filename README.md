@@ -1,4 +1,4 @@
-# AnimeNopiea: The biggist Anime Plateform
+# AnimeNopia: The Biggist Anime Plateform
 
 ## Our Woderfull team member :
 1. Dua'a Hammo
