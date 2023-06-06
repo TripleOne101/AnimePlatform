@@ -4,7 +4,7 @@
 1. Dua'a Hammo
 2. Rula Alqudha
 3. Hamza Almuhisen
-4. Khadigah Saleh
+4. Khadijah Saleh
 5. Ziad Abazeed
 6. Dania Alreqb
 7. Luma Hatamleh
