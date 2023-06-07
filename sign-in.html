@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/19fb578bed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/sign-in.css" />
     <title>Sign in page</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="assets-html/logo.png" alt="logo">
+    </header>
+    <main>
+        <!--sign-in form-->
+        <form class="signIn">
+            <div class="name">
+                <input class="user" type="text" placeholder="User Name" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="password">
+                <input class="pass" type="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div> <br>
+            <input class="button" type="button" value="Enter">
+        </form>
+    </main>
 </body>
+
 </html>
