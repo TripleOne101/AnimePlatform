@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 100px;
+    margin: 20px 30px;
+    gap: 30px;
+  
+
+}
+
+.card img {
+
+    max-width: 330px;
+}
+
+h1 {
+
+    width: 461px;
+    height: 188px;
+    font-weight: 600;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px 560px;
+}
