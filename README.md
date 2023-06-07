@@ -1,26 +1,60 @@
-# AnimeTopia: Anime Plateform
+# AnimeTopia: Anime Platform
 
-## Our team members :
-1. Dua'a Hammo
-2. Rula Alqudha
-3. Hamza Almuhisen
-4. Khadijah Saleh
-5. Ziad Abazeed
-6. Dania Alreqb
-7. Luma Hatamleh
+## Our Team Members
 
-## What is our project
-AnimeTopiea an Anime Plateform
+* Dua'a Hammo
+* Rula Alqudha
+* Hamza Almuhisen
+* Khadijah Saleh
+* Ziad Abazeed
+* Dania Alreqb
+* Luma Hatamleh
 
-we are Creating a platform for youth for anime lovers to watch anime.
-we will make it easier for fans to access a wide range of anime content in one place. Instead of searching for individual shows or relying on fragmented sources, fans can rely on a dedicated platform that offers a vast library of anime titles. Moreover, to make more interaction between user and webpage through characters and design.
+## Project Overview
+
+AnimeTopia is a platform designed specifically for anime lovers. Our goal is to provide a comprehensive and convenient way for fans to access a wide range of anime content in one place. Gone are the days of searching for individual shows or relying on fragmented sources. With AnimeTopia, users can rely on a dedicated platform that offers a vast library of anime titles. Additionally, we aim to enhance user engagement by incorporating interactive characters and captivating designs.
+
+## Summary of Idea
+
+Creating a platform for anime lovers to watch anime, interact with characters, and get the latest news. The platform will also include ratings for anime and showcase the top watched ones.
+
+## The problem it solves
+
+ Anime fans often struggle to find a centralized platform for accessing a wide range of anime content. Instead of searching for individual shows or relying on fragmented sources, AnimeTopia provides a dedicated platform with a vast library of anime titles. Furthermore, AnimeTopia aims to enhance user engagement through interactive characters and captivating designs.
 
 ## Wireframe
-https://www.figma.com/file/wGdL1J6dsbJCFBndGSmNyu/Untitled?type=design&node-id=0%3A1&t=dSOUdVBFEti2BxbW-1
 
-## Desgin (live desgin)
-https://www.figma.com/proto/aGZPigAZOXM7He1env6pUb/animetopia?page-id=0%3A1&type=design&node-id=1-2&viewport=893%2C753%2C0.27&scaling=min-zoom&starting-point-node-id=1%3A2
+To get a visual representation of our platform, you can refer to our  [Wireframe](https://www.figma.com/file/wGdL1J6dsbJCFBndGSmNyu/Untitled?type=design&node-id=0%3A1&t=dSOUdVBFEti2BxbW-1) designs . The wireframes provide an overview of the different pages and their layout.
 
+## Designs
 
-## page live  
-https://tripleone101.github.io/AnimePlatform/
+To experience the aesthetics and user interface of AnimeTopia, check out our live [Designs](https://www.figma.com/file/2HEL715qPdNmWbvvK6Z3jT/animetopia?type=design&node-id=1%3A166&t=mgTCMymk1kuwBQ2l-1). The live design showcases the visual elements, color schemes, and interactions that make up the AnimeTopia platform.
+
+## Deployed
+
+Feel free to explore AnimeTopia on our live page [Deployed](https://tripleone101.github.io/AnimePlatform/). The live page allows you to navigate through the different sections and experience the functionality of AnimeTopia firsthand.
+___
+
+## Wireframe Details
+
+### Home Page
+
+![Home Page](./assets/HomePage.png)
+
+The home page is the entry point of AnimeTopia. It provides an overview of featured anime shows, recommendations, and quick access to different sections of the platform.
+
+### Sign In Page
+
+![Sign In Page](./assets/Signin.png)
+
+### All Anime PAge
+
+![All Anime](./assets/allAnime.png)
+
+### Anime Details Page
+
+![Anime Details](./assets/animeDetails.png)
+
+### Movies Page
+
+![Movies](./assets/Moveis.png)
