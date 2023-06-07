@@ -1,0 +1,135 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Body {
+    background: radial-gradient(ellipse at bottom, #1b2753 0%, #090a0f 100%);
+    font-family: "Josefin Sans", sans-serif;
+    /* background-image: url("https://live.staticflickr.com/65535/52957630620_ce5a8bb9bb_n.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw; /* Set the maximum width to the viewport width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+header nav {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+   
+  
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     list-style: none;
+     gap: 20px;
+     margin-left: 1050px;
+     
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.title {
+   text-align: center;
+   color: white;
+   
+}
+
+ 
+  .mainimg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin-top: 180px;
+    margin-left: 530px; 
+    width: 80%; 
+    position: relative;
+}
+
+.mainimg img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.mainimg {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.groups-image {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px; 
+}
+
+main {
+    margin-top: -502px;
+
+}
+
+section {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #1b2753;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #090a0f;
+  }
+
+footer {
+   
+    margin-top: 500px;
+    margin-left: 20px;
+    color: white;
+}
