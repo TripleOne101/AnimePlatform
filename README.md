@@ -18,7 +18,7 @@ we will make it easier for fans to access a wide range of anime content in one p
 ## Wireframe
 https://www.figma.com/file/wGdL1J6dsbJCFBndGSmNyu/Untitled?type=design&node-id=0%3A1&t=dSOUdVBFEti2BxbW-1
 
-## Desgin (live desgin)
+## Design (live design)
 https://www.figma.com/proto/aGZPigAZOXM7He1env6pUb/animetopia?page-id=0%3A1&type=design&node-id=1-2&viewport=893%2C753%2C0.27&scaling=min-zoom&starting-point-node-id=1%3A2
 
 
