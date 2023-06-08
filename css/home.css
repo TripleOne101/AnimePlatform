@@ -604,10 +604,10 @@ ul {
     color: #fff;
     list-style: none;
     position: absolute;
-    left: 74.39%;
+    left: 63.39%;
     right: 1.4%;
     top: 12.5%;
-    bottom:  77.5%;
+    bottom:  77.50%;
 }
 
 li {
@@ -640,7 +640,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     color: #1a223b;
     
