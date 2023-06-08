@@ -12,8 +12,6 @@ function User(userName) {
 
 // render method
 User.prototype.render = function () {
-
-    console.log(this.userName);
 }
 
 // handler method to get data from user form
