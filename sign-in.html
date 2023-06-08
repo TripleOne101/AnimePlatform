@@ -17,22 +17,21 @@
     <main>
         <!--sign-in form-->
         <fieldset> Login  <br> 
-        <form class="signIn">
+        <form id="userForm">
             <div class="name">
-                <input class="user" type="text" placeholder="Email" required>
+                <input id="user" type="text" placeholder="Email" required>
                 <i class="fas fa-envelope"></i>
             </div>
             <div class="password">
-                <input class="pass" type="password" placeholder="Password" required>
+                <input id="pass" type="password" placeholder="Password">
                 <i class="fas fa-lock"></i>
             </div> <br>
-            <input class="button" type="button" value="Login">
+            <button class="button" type="submit" value="Login">Login</button>  
         </form>
-
         <p>Don’t have an account? <b>it’s Ok</b> </p>
     </fieldset>
-
-    </main>
+</main>
+<script src="./js/sign-in.js"></script>
 </body>
 
 </html>

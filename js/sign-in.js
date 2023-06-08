@@ -21,7 +21,7 @@ function handler(e){
 
     e.preventDefault();
     
-    let userName = e.target.userName.value;
+    let userName = e.target.user.value;
 
     let newUser = new User(userName);
     

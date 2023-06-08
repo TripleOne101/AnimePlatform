@@ -3,7 +3,7 @@
 ## Our Team Members
 
 * Dua'a Hammo
-* Rula Alqudha
+* Rula Alqudah
 * Hamza Almuhisen
 * Khadijah Saleh
 * Ziad Abazeed
