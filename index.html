@@ -9,62 +9,151 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>ANITOPIA</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./assets/Artboard 2.png" alt="Logo">
-                </a>
-            </div>
-            <ul>
-                <li><a class="header" href="./index.html">Home</a></li>
-                <li><a class="header" href="./Anime.html">Anime</a></li>
-                <li><a class="header" href="./Movies.html">Movies</a></li>
-                <li><a class="header" href="./characters.html">Characters</a></li>
-                <li><a href="./css/sign-in.css" class="gg-log-in"></a></li>
-            </ul>
-        </nav>
-    </header>
+   
+<header>
+    <nav>
+        <div >
+        </div>
+        <ul>
+            <li><span class="header" href="./index.html"><img class="logo" href="index.html" src="./assets/Artboard 2.png" alt="logo">
+            </span></li>
 
+            <li><a class="header" href="./index.html">Home</a></li>
+            <li><a class="header" href="./Anime.html">Anime</a></li>
+            <li><a class="header" href="./Movies.html">Movies</a></li>
+            <li><a class="header" href="./characters.html">Characters</a></li>
+            <li><a href="./sign-in.html" class="gg-log-in"></a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- bg -->
+ <section class="wrapper">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <!-- <div id="title">
+        <span id="size" class="glow">ANITOPIA</span>
+        <h5>Where captivating anime storyline, a passionate<br> community intertwine,
+            celebrating beloved characters.</h5>
+    </div> -->
+</section>
 
     <main>
-        <!-- bg -->
-        <section class="wrapper">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-            <div id="title">
-                <span id="size" class="glow">ANITOPIA</span>
-                <h5>Where captivating anime storyline, vibrant animation,<br>
-                    and a passionate community intertwine,
-                    celebrating<br> beloved characters.</h5>
+
+
+    <!-- slider -->
+
+    
+    <div class="app">
+
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                </div>
+                
             </div>
-        </section>
 
-        
-    </main>
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
 
-    <div class="Top">
-        <span >T</span>
-        <span>O</span>
-        <span><P></P></span>
-        <span> </span>
-        <span>W</span>
-        <span>A</span>
-        <span>T</span>
-        <span>C</span>
-        <span>H</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G</span>
-      </div>
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name ">Attack on Titan</h1>
+                    <h4 class="text location">Directed by Tetsurō Araki</h4>
+                    <p class="text description">Directed by Hayato date: 2003.</p>
+                </div>
 
+                <div class="info next--info">
+                    <h1 class="text name">Naruto</h1>
+                    <h4 class="text location">Adventure fantasy</h4>
+                    <p class="text description">Directed by Hayato date: 2002.</p>
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">Attack on Titan</h1>
+                    <h4 class="text location">Directed by Tetsurō Araki</h4>
+                    <p class="text description">Directed by Hayato date: 2003.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="./assets/6.png" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="./assets/3.png" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="./assets/1.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="loading__wrapper">
+        <div class="loader--text">Loading. . .</div>
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+
+
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+    
+</main>
     <footer>
+        
+        <div class="social_icons">
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content"> © 2023 ANITOPIA - TripleOne </div>
+        </div>
         <!-- Waves Container -->
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -80,14 +169,13 @@
                     <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
                 </g>
             </svg>
-        </div>
-        <div class="footer-content"> © 2023 ANITOPIA - TripleOne </div>
-        <div class="social_icons">
-            <a href="https://github.com"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        </div>
+
     </footer>
+
+
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
