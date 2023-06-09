@@ -18,13 +18,9 @@ User.prototype.render = function () {
 function handler(e) {
 
     e.preventDefault();
-
     let userName = e.target.user.value;
-
     let newUser = new User(userName);
-
     newUser.render();
-
     e.target.reset();
 
     //local storage
