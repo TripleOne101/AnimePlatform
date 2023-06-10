@@ -5,6 +5,7 @@
     /* font-family: "Josefin Sans", sans-serif; */
 
 }
+
 /* Header styles */
 
 ul {
@@ -16,7 +17,7 @@ ul {
     left: 74.39%;
     right: 1.4%;
     top: 12.5%;
-    bottom:  77.5%;
+    bottom: 77.5%;
 }
 
 li {
@@ -49,31 +50,32 @@ header {
     padding: 20px;
     color: #fff;
     color: #1a223b;
-    
-  }
-  
-  .logo img {
-    width: 100px; 
-  }
-  
-  nav ul {
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
     display: flex;
     list-style-type: none;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin-right: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-  } 
-  /* end Header styles */
+}
+
+/* end Header styles */
 
 /* heading for this page styling */
-.heading{
+.heading {
 
     width: 461px;
     height: 188px;
@@ -104,14 +106,14 @@ header {
     position: relative;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
     margin: 20px 20px;
 
 }
 
 .card:hover {
-     
+
     transform: translateY(20px);
 }
 
@@ -124,7 +126,7 @@ header {
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(6, 7, 19,0.5), rgba(111, 198, 235,1));
+    background: linear-gradient(to bottom, rgba(11, 67, 88, 0.5), rgb(19, 53, 68));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -191,6 +193,22 @@ header {
 
 .card .info .btn:hover {
 
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
-/* end card styling */
+
+.card .btn-favorite {
+
+    padding: 10px 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 90px;
+    background: #f080c5;
+    border-radius: 50px;
+}
+
+.card .btn-favorite:hover {
+
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* end card styling #f080a2*/
