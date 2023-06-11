@@ -2,8 +2,16 @@
 const soundIcon = document.getElementById("sound-icon");
 const soundUrl = "js/sounds/mashup spacetoon songs -.mp3";
 const audio = new Audio(soundUrl);
+let isPlaying = false;
+
 soundIcon.addEventListener("click", () => {
-  audio.play();
+  if (isPlaying) {
+    audio.pause();
+    isPlaying = false;
+  } else {
+    audio.play();
+    isPlaying = true;
+  }
 });
 
 function Input ( yourname, chname,quote,image) {
