@@ -40,11 +40,13 @@ Input.prototype.render = function () {
     
     let chname = document.createElement("p")
     chname.textContent = this.chname;
+    chname.style.marginBottom = "10px";
     chname.style.color = "white";
     information.appendChild(chname);
     
     let quote = document.createElement("h3")
     quote.textContent = this.quote;
+    quote.style.marginBottom = "10px";
     quote.style.color = "white";
     information.appendChild(quote);
 
