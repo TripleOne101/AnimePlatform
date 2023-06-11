@@ -25,7 +25,7 @@ function handler(e) {
 
     //local storage
     window.localStorage.setItem('userEmail', userName);
-    currentUser = window.localStorage.getItem('userEmail');
+    console.log(Movies[i].Id)
     console.log(`welcome ${currentUser}`)
 };
 
