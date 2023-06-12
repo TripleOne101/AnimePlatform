@@ -25,6 +25,17 @@ html {
   margin: 4rem 0;
 }
 
+.Sound {
+margin-left: 20px;
+margin-top: -20px;
+
+
+}
+#sound-icon {
+  color: white; 
+  font-size: 20px; 
+}
+
 #stars {
     position: fixed;
     left: 0;
@@ -815,53 +826,31 @@ align-items: center;
 justify-content: center;
 margin-top: -60px;
 }
-form {
-background-color: transparent;
-padding: 20px;
-border: none;
-border-radius: 10px;
-width: 400px;
-margin-bottom: 20px;
-margin-left: -590px;
-}
-
-form {
-background-color: transparent;
-padding: 20px;
-border: none;
-border-radius: 10px;
-width: 1000px;
-width: 100%;
-margin-bottom: 20px;
-margin-left: 400px;
-margin-right: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
 form div {
-display: flex;
-align-items: center;
-margin-bottom: 10px;
-width: 100%;
-margin-left: -800px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 form label {
-color: white;
-margin-right: 10px;
-flex: 0 0 120px; 
+  color: white;
+  margin-bottom: 5px;
 }
 
 form input[type="text"] {
-  width: 1300px;
- padding: 10px;
-border: 2px solid #ccc;
-border-radius: 5px;
-margin-top: 10px;
-height: 50px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(57, 72, 103, 0.5); /* Change the color and opacity values */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 
+.part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 20px; /* Increase margin-bottom for additional spacing */
 }
 
 h2 {
@@ -889,6 +878,7 @@ margin-top: 30px;
   font-size: 16px;
 }
 
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -898,9 +888,42 @@ margin-top: 30px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 300px;
+  height: 380px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards .cover-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cards .character {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a223b;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 300px; 
-  height: 350px; 
+  height: 380px; 
+  margin-top: 20px;
+  align-items: center;
 }
 
 .cards:hover {
@@ -924,6 +947,8 @@ margin-top: 30px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-start; 
 }
 
 #save:hover {

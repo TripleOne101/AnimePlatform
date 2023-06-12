@@ -2,22 +2,36 @@
 const soundIcon = document.getElementById("sound-icon");
 const soundUrl = "js/sounds/mashup spacetoon songs -.mp3";
 const audio = new Audio(soundUrl);
+let isPlaying = false;
+
 soundIcon.addEventListener("click", () => {
-  audio.play();
+  if (isPlaying) {
+    audio.pause();
+    isPlaying = false;
+  } else {
+    audio.play();
+    isPlaying = true;
+  }
 });
+
 let UserInputs=[]
+
+
+
 function Input ( yourname, chname,quote,image) {
   this.yourname = yourname;
   this.chname = chname;
   this.quote = quote;
   this.image = image;
+
   UserInputs.push(this);
 
-}
+
 
  function render () {
 
     let forminf = document.getElementsByClassName("quotes")[0];
+
     forminf.innerHTML=``;
  
     for (let i = 0; i < UserInputs.length; i++) {
@@ -51,6 +65,9 @@ function Input ( yourname, chname,quote,image) {
     image.style.width = "200px"; 
     image.style.height = "200px"; 
     information.appendChild(image);
+
+
+
  
     
 }}
@@ -74,7 +91,9 @@ function handler(e){
     }
   
    
+
  new Input( yourname,chname,quote,image);
+
     
     storeIntoLocalStorage();
   
@@ -82,6 +101,7 @@ function handler(e){
 
  
 };
+
 
 
 function storeIntoLocalStorage() {
