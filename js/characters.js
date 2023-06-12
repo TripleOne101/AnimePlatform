@@ -29,7 +29,6 @@ function Input ( yourname, chname,quote,image) {
     forminf.appendChild(information);
 
 
-
     let yourname = document.createElement("p");
     yourname.textContent = UserInputs[i].yourname;
     yourname.classList.add("yourName");
@@ -67,14 +66,12 @@ function Input ( yourname, chname,quote,image) {
 let saveValues = document.getElementById("character-form");
 saveValues.addEventListener('submit', handler);  
 
-
 function handler(e){
     e.preventDefault();
     let yourname = e.target.yourname.value;
     let chname = e.target.chname.value;
     let quote = e.target.quote.value;
     let image = e.target.image.value; 
-
 
     const MAXLENGTH = 100; 
 
@@ -93,14 +90,12 @@ function handler(e){
  
 };
 
-
 function storeIntoLocalStorage() {
  
   // convert JS to JSON 
   let jsonObjArray = JSON.stringify(UserInputs);
   window.localStorage.setItem("characters", jsonObjArray);
 }
-
 
 function readFromLocalStorage() {
   // read the json Array From LS 
@@ -122,9 +117,7 @@ function readFromLocalStorage() {
 
   }
 
-
 }
-
 
 readFromLocalStorage();
 
