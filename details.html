@@ -1,146 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/details.css" />
-    
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/details.css" />
 
-    <!-- Fonts -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <!-- Fonts -->
 
-    <!-- icon -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- icon -->
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- icon -->
 
-    <title>Details page</title>
+  <title>Details page</title>
 </head>
+
 <body>
-  
 
-    <div class="details-page-container">
-      <div class="details-page-top-container">
-        <header>
-          <nav>
-            <div class="logo">
-              <img class="logo" src="assets/logo.png" alt="Logo" />
-            </div>
-            <div>
-              <ul>
-                  <li>
-                      <a>Home</a>
-                  </li>
-                  <li>
-                      <a>Anime</a>
-                  </li>
-                  <li>
-                      <a>Movies</a>
-                  </li>
-                  <li>
-                      <a class="material-symbols-outlined">login</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-      </header>
-  
-        <div class="details-page-hero">
-          <h1 class="Heading"> Naruto</h1>
-            <small class="type">
-              Action Drama Shonen <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </small> 
-            <span class="desc">
-              
-              <span>In a village where he was rejected for unknown reasons, Naruto Uzumaki, a young ninja who seeks to become the Hokage, the leader of his village</span>
-            </span>
-            <div class="solid-button-container">
-              <button class="Button">
-                <span class="material-symbols-rounded">
-                  play_arrow play
-                  </span>
-              </button>
-            </div>
+
+
+  <header style="position: absolute; width: 100vw; z-index: 2;">
+    <nav>
+      <img class="logo" src="assets/logo.png" alt="Logo" />
+      <ul>
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Anime</a>
+        </li>
+        <li>
+          <a>Movies</a>
+        </li>
+        <li>
+          <a class="material-symbols-outlined">login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+    <div class="container">
+      <img id="back-image" style="width: 100%;" src="/assets/Naruto.jpg" />
+      <div class="centered">
+        <h1 id="name">
+          
+        </h1>
+        <div class="type-rate">
+          <h2 id="type">
+            
+          </h2>
+          <img src="/assets/Rating.png" />
+        </div>
+        <p style="width: 600px;" id="desc">
          
-        </div>
+        </p>
+        <button>
+          <img src="/assets/play_arrow.svg" alt="">
+
+          Play
+        </button>
       </div>
-      <div id="main-section" class="details-page-main">
-        <h1>more Items:</h1>
-        <div class="more-items">
-      
-      <div class="cards">
-        <div class="card-img"><img src="./assets/charcter.png"></div>
-        <h2>movie name</h4>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-    </div>
-    <div class="cards">
-      <div class="card-img"><img src="./assets/charcter.png"></div>
-      <h2>movie name</h4>
-        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-  </div>
-  <div class="cards">
-    <div class="card-img"><img src="./assets/charcter.png"></div>
-    <h2>movie name</h4>
-      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-</div>
-<div class="cards">
-  <div class="card-img"><img src="./assets/charcter.png"></div>
-  <h2>movie name</h4>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-</div>
-<div class="cards">
-  <div class="card-img"><img src="./assets/charcter.png"></div>
-  <h2>movie name</h4>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-</div>
-<div class="cards">
-  <div class="card-img"><img src="./assets/charcter.png"></div>
-  <h2>movie name</h4>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-</div>
-<div class="cards">
-  <div class="card-img"><img src="./assets/charcter.png"></div>
-  <h2>movie name</h4>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-</div>
-
-<div class="cards">
-  <div class="card-img"><img src="./assets/charcter.png"></div>
-  <div class="text-card">
-  <h2>movie name</h4>
-    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-  </div>
-  </div>
-
-  
-
-
-        </div>
-
-
-
-      </div>
-       
-    
-      </div>
-      <footer>
-        <div> © 2023 ANITOPIA - TripleOne </div>
-        <div>
-            <img src="assets/inst.svg" />
-            <img src="assets/face.svg" />
-            <img src="assets/twit.svg" />
-        </div>
-    </footer>
-
     </div>
 
-  
-  </body>
+    <h1 class="card-title">
+      More like this
+    </h1>
+    <div class="card-list">
+
+      <div class="card">
+        <div class="container">
+          <img src="assets/a-0.jpg" alt="Avatar" style="width:100%">
+          <button class="center">Play</button>
+        </div>
+        <div class="card-details">
+          <h4><b>Demon Slayer</b></h4>
+          <img src="/assets/Rating.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+          <img src="assets/a-0.jpg" alt="Avatar" style="width:100%">
+          <button class="center">Play</button>
+        </div>
+        <div class="card-details">
+          <h4><b>Demon Slayer</b></h4>
+          <img src="/assets/Rating.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+          <img src="assets/a-0.jpg" alt="Avatar" style="width:100%">
+          <button class="center">Play</button>
+        </div>
+        <div class="card-details">
+          <h4><b>Demon Slayer</b></h4>
+          <img src="/assets/Rating.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+          <img src="assets/a-0.jpg" alt="Avatar" style="width:100%">
+          <button class="center">Play</button>
+        </div>
+        <div class="card-details">
+          <h4><b>Demon Slayer</b></h4>
+          <img src="/assets/Rating.png" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+          <img src="assets/a-0.jpg" alt="Avatar" style="width:100%">
+          <button class="center">Play</button>
+        </div>
+        <div class="card-details">
+          <h4><b>Demon Slayer</b></h4>
+          <img src="/assets/Rating.png" />
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div> © 2023 ANITOPIA - TripleOne </div>
+    <div>
+      <img src="assets/inst.svg" />
+      <img src="assets/face.svg" />
+      <img src="assets/twit.svg" />
+    </div>
+  </footer>
+
+  </div>
+
+<script src="js/details.js"></script>
+</body>
+
 </html>
