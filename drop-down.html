@@ -20,26 +20,25 @@
                 <li><a href="">Anime</a></li>
                 <li><a href="">Movies</a></li>
                 <li><a href="">Characters</a></li>
+                <li><a class="gg-log-in" onclick="toggleMenu()"></a></li>
             </ul>
-            <a class="gg-log-in" onclick="toggleMenu()"></a>
-
+            
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
                     <div class="user-info">
-                        <img src="https://th.bing.com/th/id/R.bc8abf4164cb9ae12872dd77956f3753?rik=gno2jmkaAlh1yw&riu=http%3a%2f%2fbonniesomerville.nz%2fwp-content%2fuploads%2f2015%2f08%2fprofile-icon.png&ehk=RFa%2b%2b54P%2b29B%2fafZdZZ7xGNy16dQxFLBv8Q7Sh9xyVY%3d&risl=&pid=ImgRaw&r=0">
+                        <img
+                            src="https://th.bing.com/th/id/R.bc8abf4164cb9ae12872dd77956f3753?rik=gno2jmkaAlh1yw&riu=http%3a%2f%2fbonniesomerville.nz%2fwp-content%2fuploads%2f2015%2f08%2fprofile-icon.png&ehk=RFa%2b%2b54P%2b29B%2fafZdZZ7xGNy16dQxFLBv8Q7Sh9xyVY%3d&risl=&pid=ImgRaw&r=0">
                         <h2 id="guest">guest</h2>
                     </div>
                     <hr>
 
-                    <a href="profile.html" class="sub-menu-link"><img
-                            src="https://th.bing.com/th/id/OIP.o7iZsPVke-HeJIggV1BwYgHaHa?pid=ImgDet&rs=1">
+                    <a href="profile.html" class="sub-menu-link"><i class="fas fa-user"></i>
                         <p>Profile</p>
                         <span>></span>
                     </a>
 
 
-                    <a href="./sign-in.html" class="sub-menu-link"><img
-                            src="https://th.bing.com/th/id/OIP.gzSH9dtlJRRpoPwAgNQXvAHaHa?pid=ImgDet&rs=1">
+                    <a href="./sign-in.html" class="sub-menu-link"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
                         <p>Login</p>
                         <span>></span>
                     </a>
@@ -50,10 +49,18 @@
         </nav>
     </div>
 
+    <footer>
+        <div class="social_icons">
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content"> © 2023 ANITOPIA - TripleOne </div>
+        </div>
+    </footer>
     <script>
         let subMenu = document.getElementById("subMenu");
 
-        function toggleMenu(){
+        function toggleMenu() {
             subMenu.classList.toggle("open-menu");
         }
     </script>
