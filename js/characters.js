@@ -32,18 +32,24 @@ function Input ( yourname, chname,quote,image) {
 
     let yourname = document.createElement("p");
     yourname.textContent = UserInputs[i].yourname;
+    yourname.classList.add("yourName");
     yourname.classList.add("input-field");
     yourname.style.color = "white";
     information.appendChild(yourname);
     
     let chname = document.createElement("p")
+    chname.classList.add("theName");
     chname.textContent = UserInputs[i].chname;
     chname.style.color = "white";
     information.appendChild(chname);
+
     
     let quote = document.createElement("h3")
+    quote.classList.add("theImage");
+
     quote.textContent = UserInputs[i].quote;
-    quote.style.color = "white";
+    
+  quote.style.color = "white";
     information.appendChild(quote);
 
     // let imageContainer = document.createElement("div");
@@ -51,8 +57,9 @@ function Input ( yourname, chname,quote,image) {
 
     let image = document.createElement("img")
     image.setAttribute('src', UserInputs[i].image);
-    image.style.width = "200px"; 
-    image.style.height = "200px"; 
+    image.style.width = "300px"; 
+    image.style.height = "380px"; 
+    image.classList.add("charactImage");
     information.appendChild(image);
  
     
