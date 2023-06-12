@@ -1,3 +1,6 @@
+
+'use strict';
+
 console.clear();
 
 const { gsap, imagesLoaded } = window;
@@ -78,44 +81,44 @@ function changeInfo(direction) {
 
 	gsap.timeline()
 		.to([buttons.prev, buttons.next], {
-		duration: 0.2,
-		opacity: 0.5,
-		pointerEvents: "none",
-	})
+			duration: 0.2,
+			opacity: 0.5,
+			pointerEvents: "none",
+		})
 		.to(
-		currentInfoEl.querySelectorAll(".text"),
-		{
-			duration: 0.4,
-			stagger: 0.1,
-			translateY: "-120px",
-			opacity: 0,
-		},
-		"-="
-	)
+			currentInfoEl.querySelectorAll(".text"),
+			{
+				duration: 0.4,
+				stagger: 0.1,
+				translateY: "-120px",
+				opacity: 0,
+			},
+			"-="
+		)
 		.call(() => {
-		swapInfosClass(direction);
-	})
+			swapInfosClass(direction);
+		})
 		.call(() => initCardEvents())
 		.fromTo(
-		direction === "right"
-		? nextInfoEl.querySelectorAll(".text")
-		: previousInfoEl.querySelectorAll(".text"),
-		{
-			opacity: 0,
-			translateY: "40px",
-		},
-		{
-			duration: 0.4,
-			stagger: 0.1,
-			translateY: "0px",
-			opacity: 1,
-		}
-	)
+			direction === "right"
+				? nextInfoEl.querySelectorAll(".text")
+				: previousInfoEl.querySelectorAll(".text"),
+			{
+				opacity: 0,
+				translateY: "40px",
+			},
+			{
+				duration: 0.4,
+				stagger: 0.1,
+				translateY: "0px",
+				opacity: 1,
+			}
+		)
 		.to([buttons.prev, buttons.next], {
-		duration: 0.2,
-		opacity: 1,
-		pointerEvents: "all",
-	});
+			duration: 0.2,
+			opacity: 1,
+			pointerEvents: "all",
+		});
 
 	function swapInfosClass() {
 		currentInfoEl.classList.remove("current--info");
@@ -188,24 +191,24 @@ function init() {
 			from: "right",
 			amount: 0.1,
 		},
-		"--card-translateY-offset": "0%",
+		"--card-translateY-offset": "35%",
 	})
 		.to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
-		delay: 0.5,
-		duration: 0.4,
-		stagger: 0.1,
-		opacity: 1,
-		translateY: 0,
-	})
-		.to(
-		[buttons.prev, buttons.next],
-		{
+			delay: 0.5,
 			duration: 0.4,
+			stagger: 0.1,
 			opacity: 1,
-			pointerEvents: "all",
-		},
-		"-=0.4"
-	);
+			translateY: 0,
+		})
+		.to(
+			[buttons.prev, buttons.next],
+			{
+				duration: 0.4,
+				opacity: 1,
+				pointerEvents: "all",
+			},
+			"-=0.4"
+		);
 }
 
 const waitForImages = () => {
@@ -215,7 +218,7 @@ const waitForImages = () => {
 	const loaderEl = document.querySelector(".loader span");
 
 	gsap.set(cardsContainerEl.children, {
-		"--card-translateY-offset": "100vh",
+		"--card-translateY-offset": "35vh",
 	});
 	gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
 		translateY: "40px",
@@ -241,10 +244,10 @@ const waitForImages = () => {
 				if (totalImages == loadedImages) {
 					gsap.timeline()
 						.to(".loading__wrapper", {
-						duration: 0.8,
-						opacity: 0,
-						pointerEvents: "none",
-					})
+							duration: 0.8,
+							opacity: 0,
+							pointerEvents: "none",
+						})
 						.call(() => init());
 				}
 			}
@@ -253,3 +256,113 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
+
+
+// Card // 
+
+let moviesArr = []
+function movies(Id, Name, desc, category, type, image, backImage) {
+	this.Id = Id;
+	this.Name = Name;
+	this.desc = desc;
+	this.category = category
+	this.type = type;
+	this.image = image;
+	this.backImage = backImage;
+	moviesArr.push(this)
+
+}
+
+
+let amime1 = new movies(1, "MASHLE: MAGIC AND MUSCLES", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard1.png", "");
+let amime2 = new movies(2, "HELL’S PARADDISE", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard2.png", "");
+let amime3 = new movies(3, "batmaan", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard3.png", "");
+let amime4 = new movies(4, "maskman", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/6.png", "");
+let amime5 = new movies(5, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
+let amime6 = new movies(6, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
+
+
+console.log("The Array drinsk added by user JS format => ", moviesArr);
+// convert JS to JSON 
+let jsonObjArray = JSON.stringify(moviesArr);
+window.localStorage.setItem("movies", jsonObjArray);
+
+
+
+// read the json Array From LS 
+let jsonArray = window.localStorage.getItem("movies");
+// convert the JSON to JS 
+let objArray = JSON.parse(jsonArray);
+console.log("Array after read From LS before the re-intantiation => ", objArray);
+
+if (objArray == null) {
+	console.log("The LS is Empty");
+} else {
+	// drinksArray = objArray;
+	// console.log("Global Drinks Array => ", drinksArray);
+
+	// Re-instantiation >> to get back the methods and prototype  
+
+	for (let i = 0; i < objArray.length; i++) {
+		let movie = new movies(objArray[i].Id, objArray[i].desc, objArray[i].category, objArray[i].type, objArray[i].image);
+
+	}
+	console.log("Global movies Array After the re-instantiation => ", moviesArr);
+
+}
+
+
+
+
+
+function openme(id) {
+	var movieid = id;
+
+	sessionStorage.setItem("movieid", movieid);
+
+	window.open("details.html", "_self");
+}
+
+const FavIdArr = [];
+function addToFav(id) {
+
+	if (!(FavIdArr.includes(id))) {
+		FavIdArr.push(id);
+	}
+
+	let local = localStorage.setItem("favId", JSON.stringify(FavIdArr));
+
+}
+
+function allData() {
+
+
+	let jsonArray = window.localStorage.getItem("movies");
+	// convert the JSON to JS 
+	let objArray = JSON.parse(jsonArray);
+
+	for (let i = 0; i < 3 ; i++) {
+
+
+		var cardContainer = document.getElementById('cardContainer')
+		// if(value.isComplete == 0){
+		cardContainer.innerHTML += `
+		<div class="card_down" onclick="openme(${objArray[i].Id})">
+		<div class="card-image_down">
+			<img src="${objArray[i].image}" alt="duaaHammo" width="345" height="345" />
+		</div>
+		<div class="category_down">${objArray[i].Name}</div>
+		<div class="author_down">${objArray[i].category}</div>
+		<div class="heading_down">${objArray[i].desc}
+		</div>
+	</div>
+
+           `
+		// }
+
+	}
+
+
+}
+allData()
