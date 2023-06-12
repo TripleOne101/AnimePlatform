@@ -42,8 +42,10 @@ Input.prototype.render = function () {
       yourname.classList.add("input-field");
       yourname.style.color = "white";
       information.appendChild(yourname);
+     
       
       let chname = document.createElement("p")
+      this.chname.classList.add("book");
       chname.textContent = this.chname;
       chname.style.marginBottom = "10px";
       chname.style.color = "white";
@@ -51,12 +53,14 @@ Input.prototype.render = function () {
       
       let quote = document.createElement("h3")
       quote.textContent = this.quote;
+      this.quote.classList.add("book");
       quote.style.marginBottom = "10px";
       quote.style.color = "white";
       information.appendChild(quote);
   
-      // let imageContainer = document.createElement("div");
-      // cards.appendChild(imageContainer);
+      let imageContainer = document.createElement("div");
+      this.imageContainer.classList.add("book");
+      cards.appendChild(imageContainer);
   
       let image = document.createElement("img")
       image.setAttribute('src', this.image);
