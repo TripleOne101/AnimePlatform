@@ -1,123 +1,182 @@
-*{
-    font-family:"Josefin Sans", sans-serif;
-}
-.hero{
-    min-height: 100vh;
-    background: #000000;
+* {
+  font-family: "Josefin Sans", sans-serif;
 }
 
-nav{
-    padding: 60px;
-    padding-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+body {
+  margin: 0;
+  background: #06051f;
+}
+nav {
+  padding: 30px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.logo{
-    width: 165px;
+.logo {
+  width: 160px;
 }
 
-nav ul{
-    width: 100%;
-    text-align: right;
+nav ul {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    font-size: 20px;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  font-size: 20px;
+  transition: 0.5s;
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none
+/*blur header*/
+ul:hover li {
+  filter: blur(5px);
 }
 
-.gg-log-in{
-    color: #fff;
-    display: inline-block;
-    margin: 10px 20px;
-    width: 100%;
-    cursor: pointer;
+ul li:hover {
+  filter: blur(0);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none
+}
+
+.gg-log-in {
+  cursor: pointer;
 }
 
 .sub-menu-wrap {
-    position: absolute;
-    top: 100%;
-    right: 10px;
-    width: 270px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  width: 270px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
 
-  .sub-menu-wrap.open-menu{
-    max-height: 400px;
-  }
-  
-  .sub-menu {
-    background: rgba(255, 255, 255, 0.455);
-    padding: 20px;
-    margin: 10px;
-    
-    border-radius: 10px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-info h2 {
-    font-weight: 500;
-  }
-  
-  .user-info img {
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  
-  .sub-menu hr {
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #0f0825;
-    margin: 15px 0 10px;
-  }
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
 
-  .sub-menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color:#fff;
-    margin: 12px 0;
-  }
+.sub-menu {
+  background: rgba(255, 255, 255, 0.455);
+  padding: 20px;
+  margin: 10px;
 
-  .sub-menu-link p{
-    width: 100%;
-    color: #06051f;
-  }
+  border-radius: 10px;
+}
 
-  .sub-menu-link img{
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
+.user-info {
+  display: flex;
+  align-items: center;
+}
 
-  .sub-menu-link span{
-    font-size: 22px;
-    color: #06051f;
-    transition: transform 0.5s;
-  }
+.user-info h2 {
+  font-weight: 500;
+}
 
-  .sub-menu-link:hover span{
-    transform: translate(5px);
-  }
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
 
-  .sub-menu-link:hover p{
-    font-weight: 600;
-  }
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #0f0825;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+  color: #06051f;
+}
+
+.sub-menu-link i{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  color: #06051f;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translate(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  color: #fff;
+
+}
+
+.footer-content {
+  margin-bottom: 10px;
+
+}
+
+.social_icons {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.social_icons a {
+  color: #fff;
+}
+
+.social_icons a:hover {
+  color: #fff;
+  color: #1a223b;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}

@@ -22,11 +22,11 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 fieldset {
-    padding: 18px;
+    padding: 40px;
     border: none;
     background: rgba(255, 255, 255, 0.46);
     width: fit-content;
@@ -55,8 +55,8 @@ p {
 
 #user,
 #pass {
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
     width: 200px;
     border: none;
     border-bottom: 2px solid #334253;
@@ -96,4 +96,53 @@ p {
 .button:hover {
     background-color: #555b6b;
     transition: 0.7s;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.social_icons {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+
+.social_icons a {
+    color: #fff;
+}
+
+.social_icons a:hover {
+    color: #fff;
+    color: #1a223b;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
 }
