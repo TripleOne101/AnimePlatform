@@ -14,60 +14,66 @@ soundIcon.addEventListener("click", () => {
   }
 });
 
-let userInput = [];
+let UserInputs=[]
+
+
+
 function Input ( yourname, chname,quote,image) {
   this.yourname = yourname;
   this.chname = chname;
   this.quote = quote;
   this.image = image;
-  userInput.push(this);
-}
 
-Input.prototype.render = function () {
+  UserInputs.push(this);
+
+
+
+ function render () {
 
     let forminf = document.getElementsByClassName("quotes")[0];
 
-    let jsonArray = window.localStorage.getItem("characters");
-    // convert the JSON to JS
-    let objArray = JSON.parse(jsonArray);
-    for (let i=0; i<objArray.length; i++) {
-      let information = document.createElement("div");
-      information.classList.add("cards"); 
-      forminf.appendChild(information);
-  
-  
-  
-      let yourname = document.createElement("p");
-      yourname.textContent = this.yourname;
-      yourname.classList.add("input-field");
-      yourname.style.color = "white";
-      information.appendChild(yourname);
-      
-      let chname = document.createElement("p")
-      chname.textContent = this.chname;
-      chname.style.marginBottom = "10px";
-      chname.style.color = "white";
-      information.appendChild(chname);
-      
-      let quote = document.createElement("h3")
-      quote.textContent = this.quote;
-      quote.style.marginBottom = "10px";
-      quote.style.color = "white";
-      information.appendChild(quote);
-  
-      // let imageContainer = document.createElement("div");
-      // cards.appendChild(imageContainer);
-  
-      let image = document.createElement("img")
-      image.setAttribute('src', this.image);
-      image.style.width = "200px"; 
-      image.style.height = "200px"; 
-      information.appendChild(image);
-    }
-   
+    forminf.innerHTML=``;
+ 
+    for (let i = 0; i < UserInputs.length; i++) {
+    let information = document.createElement("div");
+    information.classList.add("cards"); 
+    forminf.appendChild(information);
+
+
+
+    let yourname = document.createElement("p");
+    yourname.textContent = UserInputs[i].yourname;
+    yourname.classList.add("input-field");
+    yourname.style.color = "white";
+    information.appendChild(yourname);
+    
+    let chname = document.createElement("p")
+    chname.textContent = UserInputs[i].chname;
+    chname.style.color = "white";
+    information.appendChild(chname);
+    
+    let quote = document.createElement("h3")
+    quote.textContent = UserInputs[i].quote;
+    quote.style.color = "white";
+    information.appendChild(quote);
+
+    // let imageContainer = document.createElement("div");
+    // information.appendChild(imageContainer);
+
+    let image = document.createElement("img")
+    image.setAttribute('src', UserInputs[i].image);
+    image.style.width = "200px"; 
+    image.style.height = "200px"; 
+    information.appendChild(image);
+
+
+
  
     
-}
+}}
+let saveValues = document.getElementById("character-form");
+saveValues.addEventListener('submit', handler);  
+
 
 function handler(e){
     e.preventDefault();
@@ -85,22 +91,61 @@ function handler(e){
     }
   
    
-    let forminf = new Input( yourname,chname,quote,image);
-    console.log(userInput);
+
+ new Input( yourname,chname,quote,image);
+
+    
     storeIntoLocalStorage();
-    forminf.render();
-    
-    
-    console.log(yourname,chname,quote);
+  
+    render();
+
+ 
 };
 
+
+
 function storeIntoLocalStorage() {
-  console.log("The Array drinsk added by user JS format => ", userInput);
-  // convert JS to JSON
-  let jsonObjArray = JSON.stringify(userInput);
+ 
+  // convert JS to JSON 
+  let jsonObjArray = JSON.stringify(UserInputs);
   window.localStorage.setItem("characters", jsonObjArray);
 }
 
-let saveValues = document.getElementById("character-form");
-saveValues.addEventListener('submit', handler);
 
+function readFromLocalStorage() {
+  // read the json Array From LS 
+  let jsonArray = window.localStorage.getItem("characters");
+  // convert the JSON to JS 
+  let objArray = JSON.parse(jsonArray);
+  console.log("Array after read From LS before the re-intantiation => ", objArray);
+
+  if (objArray == null) {
+      console.log("The LS is Empty");
+  } else {
+      
+
+      for(let i = 0 ; i< objArray.length; i++){
+      new Input (objArray[i].yourname , objArray[i].chname , objArray[i].quote , objArray[i].image);
+
+      }
+     
+
+  }
+
+
+}
+
+
+
+readFromLocalStorage();
+
+var something = (function() {
+  var executed = false;
+  return function() {
+      if (!executed) {
+          executed = true;
+          render();
+      }
+  };
+})();
+something()
