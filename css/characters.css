@@ -1016,16 +1016,15 @@ footer {
   align-items: center;
   text-align: center;
   background: #07182E;
-
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 12px;
   gap: 12px;
-  width: 190px;
+  width: calc(20% - 24px); 
   height: 254px;
   cursor: pointer;
   overflow: hidden;
-  margin-bottom: 20px; /* Adjust this value to control the spacing between lines */
+  margin-bottom: 20px; 
 }
 
 .theName {
