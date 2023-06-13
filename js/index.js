@@ -275,9 +275,9 @@ function movies(Id, Name, desc, category, type, image, backImage) {
 }
 
 
-let amime1 = new movies(1, "MASHLE: MAGIC AND MUSCLES", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard1.png", "");
+let amime1 = new movies(1, "MAGIC AND MUSCLES", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard1.png", "");
 let amime2 = new movies(2, "HELL’S PARADDISE", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard2.png", "");
-let amime3 = new movies(3, "batmaan", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard3.png", "");
+let amime3 = new movies(3, "ATTACK ON TITAN", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard3.png", "");
 let amime4 = new movies(4, "maskman", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/6.png", "");
 let amime5 = new movies(5, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
 let amime6 = new movies(6, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
