@@ -1,3 +1,5 @@
+'use strict';
+
 let dropDown=document.getElementById("subMenu");
 let currentUserName=localStorage.getItem("userEmail");
 console.log(currentUserName);

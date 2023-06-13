@@ -922,134 +922,6 @@ border-radius: 10px;
 margin-top: 30px;
 }
 
-/* .quotes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
- .input-field {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  background-color: #1a223b;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 380px;
-  margin-top: 20px;
-  align-items: center;
-}
-
-.cards:hover {
-  transform: translateY(-5px);
-}
-
-.cards .cover-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.cards .character {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  background-color: #1a223b;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px; 
-  height: 380px; 
-  margin-top: 20px;
-  align-items: center;
-}
-
-.cards:hover {
-  transform: translateY(-5px);
-} 
-
-.cards h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-#save {
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-  align-self: flex-start; 
-}
-
-#save:hover {
-  background-color: #1a223b;
-}
-
-#save:active {
-  background-color: #333;
-}
-footer {
- 
-  margin-top: 500px;
-  margin-left: 20px;
-  color: white;
-} */
-
-/* .quotes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.input-field {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.cards {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #000;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 12px;
-  gap: 12px;
-  width: 190px;
-  height: 254px;
-  cursor: pointer;
-  overflow: hidden;
-} */
-
 .quotes {
   display: flex;
   flex-wrap: wrap;
@@ -1178,8 +1050,12 @@ footer {
   background-color: #333;
 }
 
+
+/* footer */
+
 footer {
-  position: fixed;
+  font-family: 'Josefin Sans';
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -1189,7 +1065,6 @@ footer {
   flex-direction: row;
   padding: 10px;
   color: #fff;
-
 }
 
 .footer-content {
@@ -1211,4 +1086,3 @@ footer {
   color: #fff;
   color: #1a223b;
 }
-

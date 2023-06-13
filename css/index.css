@@ -7,7 +7,6 @@ html {
 
 .explore {
   color: white;
-
   font-size: 50px;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
@@ -1246,114 +1245,6 @@ button:focus {
 } 
 
 
-/* Redes Down_card */
-
-
-/* .card-container {
-  width: 358px;
-  height: 486px;
-  background: transparent;
-  position: relative;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.card_down {
-  cursor: default;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #212121;
-  background-color: rgba(255, 255, 255, 0.074);
-  border: 1px solid rgba(255, 255, 255, 0.222);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  transition: all ease .3s;
-}
-
-.card-image_down {
-  width: 100%;
-  height: 50%;
-  border-radius: 6px 6px 0 0;
-  transform: scale(0.98);
-  margin-bottom: 4rem;
-}
-
-.heading_down {
-  font-size: 12px;
-  color: #fff;
-  padding: 7px;
-}
-
-.author_down {
-  padding: 0 7px;
-  color: #fff;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.name_down {
-  font-weight: 600;
-}
-
-.category_down {
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 600;
-  color: #fff;
-  padding: 10px 7px;
-  margin-top: 1.5rem;
-}
-
-.card-container::after,
-.card-container::before {
-  width: 100px;
-  height: 100px;
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  transition: .5s linear;
-}
-
-.card-container::after {
-  top: -20px;
-  left: -20px;
-  background-color: rgba(125, 214, 66, 0.603);
-  animation: animFirst 5s linear infinite;
-}
-
-.card-container::before {
-  background-color: rgb(226, 223, 54);
-  top: 70%;
-  left: 70%;
-  animation: animSecond 5s linear infinite;
-  animation-delay: 3s;
-}
-
-.card-container:hover {
-  box-shadow: 0px 0px 10px rgba(0, 77, 32, 0.432);
-}
-
-.card-container:hover::after {
-  left: 80px;
-  transform: scale(1.2);
-}
-
-.card-container:hover::before {
-  left: -10px;
-  transform: scale(1.2);
-} 
-
-
 /* News */
 
 .carr {
@@ -1428,44 +1319,6 @@ button:focus {
 }
 
 
-/* news */
-
-/* 
-.dh-card {
-  display: flex;
-  align-items: center;
-  width: auto;
-  margin: 0 4rem 10rem;
-  padding: 64px;
-
-  background-color: #1D2937;
-  border-radius: 5px;
-}
-
-.dh-card-image {
-  margin-right: 68px;
-}
-
-.dh-card-content {
-  flex-grow: 1;
-}
-
-.dh-card-title {
-  text-align: center;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-
-.dh-card-text {
-  font-family: "Josefin Sans", sans-serif;
-  color: white;
-  width: 479px;
-  font-size: 20px;
-  line-height: 1.5;
-} */
-
 /* news new design */
 .dh-card {
   height: 500px;
@@ -1519,39 +1372,22 @@ button:focus {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
 footer {
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  height: 50px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  padding: 10px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-content {
   margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .social_icons {
@@ -1570,18 +1406,5 @@ footer {
   color: #1a223b;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 
-
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white;
-}

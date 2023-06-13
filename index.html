@@ -30,33 +30,12 @@
                 <li><a class="header" href="./characters.html">Characters</a></li>
                 <li><a class="gg-log-in" onclick="toggleMenu()"></a></li>
             </ul>
-            
+
             <div class="sub-menu-wrap" id="subMenu" style="z-index: 2">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img
-                            src="https://th.bing.com/th/id/R.bc8abf4164cb9ae12872dd77956f3753?rik=gno2jmkaAlh1yw&riu=http%3a%2f%2fbonniesomerville.nz%2fwp-content%2fuploads%2f2015%2f08%2fprofile-icon.png&ehk=RFa%2b%2b54P%2b29B%2fafZdZZ7xGNy16dQxFLBv8Q7Sh9xyVY%3d&risl=&pid=ImgRaw&r=0">
-                        <h2 id="guest">guest</h2>
-                    </div>
-                    <hr>
-
-                    <a href="profile.html" class="sub-menu-link"><i class="fas fa-user"></i>
-                        <p>Profile</p>
-                        <span>></span>
-                    </a>
-
-                    <a href="./sign-in.html" class="sub-menu-link"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
-                        <p>Login</p>
-                        <span>></span>
-                    </a>
-
-                </div>
+                <!--put rest of code on js-->
             </div>
         </nav>
     </header>
-
-
-
 
     <!-- bg -->
     <section class="wrapper">
@@ -64,22 +43,7 @@
         <div id="stars2"></div>
         <div id="stars3"></div>
 
-
-
-        <!-- <div id="title">
-        <span id="size" class="glow">ANITOPIA</span>
-        <h5>Where captivating anime storyline, a passionate<br> community intertwine,
-            celebrating beloved characters.</h5>
-    </div> -->
-
-
-
     </section>
-
-
-
-
-
     <main>
 
 
@@ -180,11 +144,6 @@
 
 
 
-        <!-- Card Watch now
-        3 <img src="https://i.pinimg.com/duaaHammo/5f/08/d3/5f08d31f1280023873f8954b0fd88ab3.jpg">
-        2 <img src="https://i.pinimg.com/originals/ab/10/57/ab1057b5420d05f9013aaf535bbfe4c1.jpg">
-        1 <img src="https://pbs.twimg.com/media/FrfrEWtaMAIadrM?format=jpg&name=4096x4096">
-        -->
         <section>
             <br />
             <h1 class="explore">Explore the Top Watching Anime</h1>
@@ -217,28 +176,6 @@
                 </div>
             </div>
 
-
-
-            <!-- 
-            <img src="">
-
-            <div class="dh-card">
-                <img src="assets/duaahammo144.png" alt="duaahammo18" class="dh-card-image">
-                <div class="dh-card-content">
-                    <h2 class="dh-card-title">Demon Slayer</h2>
-                    <p class="dh-card-text">Demon Slayer follows the story of Tanjiro, a young boy whose family is
-                        tragically killed by demons, and his younger sister, Nezuko, who becomes a demon herself.
-                        Determined to avenge his family and find a cure for Nezuko, Tanjiro joins the Demon Slayer Corps
-                        and the latest episode is all set to be released on Sunday. For those who are not a fan of
-                        subtitles, the wait is over. The English dub of Demon Slayer: Kimetsu no Yaiba Sword-smith
-                        Village Arc (also known as season 3) has been confirmed and a release date has been announced.
-                    </p>
-                </div>
-            </div> -->
-
-
-
-            <!-- </div> -->
         </section>
 
 
@@ -262,6 +199,13 @@
 
     <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
     <script src="./js/index.js"></script>
 </body>
 
