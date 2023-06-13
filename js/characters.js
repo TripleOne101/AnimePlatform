@@ -32,7 +32,6 @@ function Input ( yourname, chname,quote,image) {
     information.classList.add("cards"); 
     forminf.appendChild(information);
 
-
     let yourname = document.createElement("p");
     yourname.textContent ="Name: " + UserInputs[i].yourname;
     yourname.classList.add("yourName");
