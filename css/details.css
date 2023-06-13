@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #000f1b;
 }
@@ -585,13 +586,12 @@ nav {
   font-family: 'Josefin Sans';
 }
 
-.logo {
-  width: 160px;
-}
+
 
 nav ul {
   width: 100%;
   text-align: right;
+
   display: flex;
   align-items: center;
   justify-content: right;
@@ -648,6 +648,7 @@ nav ul li a {
 .user-info {
   display: flex;
   align-items: center;
+
 }
 
 .user-info h2 {
@@ -705,19 +706,21 @@ nav ul li a {
 
 button {
   background: #dddddd;
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
+  font-weight: 300;
+  font-size: 35px;
   color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   padding: 4px 48px;
   gap: 20px;
+
 }
 
 /* class class  class class  class class  class class  class class */
@@ -726,11 +729,13 @@ button {
   font-variation-settings: "FILL" 1;
   font-size: 50px !important;
 }
+
 .container {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .centered {
   position: absolute;
   top: 352px;
@@ -741,11 +746,14 @@ button {
   background-color: rgb(0, 0, 0,0.3);
   padding: 20px;
 }
+
 .centered h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
+
   font-size: 40px;
+
   color: #ffffff;
 }
 
@@ -758,8 +766,10 @@ button {
   font-style: normal;
   font-weight: 600;
   width: 624px;
+
   font-size: 24px;
   line-height: 38px;
+
   color: #ffffff;
   text-align: start;
   margin-top: 32px;
@@ -772,8 +782,8 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px; /* Decreased font size */
+  line-height: 24px;
   color: #d6d4d4;
 }
 
@@ -782,10 +792,13 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
+
   font-size: 50px;
   line-height: 66px;
+
   color: #ffffff;
 }
+
 .card-list {
   display: flex;
   flex-direction: row;
@@ -793,19 +806,24 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0px;
+
   gap: 10px;
+
 }
 
 .card {
-  width: 360px;
-  height: 512px;
+  width: 250px; /* Decreased width */
+  height: 364px; /* Decreased height */
   background: #000f1b;
-  border: 4px solid #45f3ff;
-  border-radius: 12px;
+  border: 2px solid #45f3ff;
+  border-radius: 6px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+
   transform: scale(0.8);
+
 }
+
 .card:hover {
 }
 
@@ -813,19 +831,21 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 20px; /* Decreased font size */
+  line-height: 28px;
   text-align: start;
   color: #ffffff;
 }
+
 .card-details {
-  padding-left: 20px;
+  padding-left: 10px;
   margin-top: 28px;
 }
 
 .card img {
   opacity: 1;
   transition: 0.3s;
+  /* transform: scale(0.75); */
 }
 
 .center {
@@ -837,7 +857,7 @@ button {
   cursor: pointer;
   border-radius: 12px;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px; /* Decreased font size */
   display: flex;
   flex-direction: row;
   justify-content: center;
