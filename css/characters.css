@@ -840,7 +840,7 @@ form label {
 form input[type="text"] {
   width: 100%;
   padding: 10px;
-  background: #07182E;
+  background: #1a223b;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 10px;
@@ -1015,7 +1015,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #07182E;
+  background: #1a223b;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 12px;
