@@ -31,3 +31,12 @@ function handler(e) {
 
 let submitUserData = document.getElementById('userForm');
 submitUserData.addEventListener('submit', handler)
+
+
+
+document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+
+    window.location.href = "index.html";
+  });
