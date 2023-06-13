@@ -1013,8 +1013,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; 
+  text-align: left;
   background: #1a223b;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1094,8 +1094,8 @@ footer {
 
 .cards h3 {
   font-size: 18px;
-  font-weight: bold;
   color: #fff;
+  text-align: left;
 }
 
 #save {
