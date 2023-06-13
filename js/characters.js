@@ -2,8 +2,16 @@
 const soundIcon = document.getElementById("sound-icon");
 const soundUrl = "js/sounds/mashup spacetoon songs -.mp3";
 const audio = new Audio(soundUrl);
+let isPlaying = false;
+
 soundIcon.addEventListener("click", () => {
-  audio.play();
+  if (isPlaying) {
+    audio.pause(); 
+    isPlaying = false; 
+  } else {
+    audio.play(); 
+    isPlaying = true; 
+  }
 });
 let UserInputs=[]
 function Input ( yourname, chname,quote,image) {
@@ -18,19 +26,14 @@ function Input ( yourname, chname,quote,image) {
 
     let forminf = document.getElementsByClassName("quotes")[0];
     forminf.innerHTML=``;
-    // read the json Array From LS 
-  //let jsonArray = window.localStorage.getItem("characters");
-  // convert the JSON to JS 
- // console.log("this is"+jsonArray);
-  //let objArray = JSON.parse(jsonArray);
+   
     for (let i = 0; i < UserInputs.length; i++) {
     let information = document.createElement("div");
     information.classList.add("cards"); 
     forminf.appendChild(information);
 
-
     let yourname = document.createElement("p");
-    yourname.textContent = UserInputs[i].yourname;
+    yourname.textContent ="Name: " + UserInputs[i].yourname;
     yourname.classList.add("yourName");
     yourname.classList.add("input-field");
     yourname.style.color = "white";
@@ -38,15 +41,15 @@ function Input ( yourname, chname,quote,image) {
     
     let chname = document.createElement("p")
     chname.classList.add("theName");
-    chname.textContent = UserInputs[i].chname;
+    chname.textContent =" Character name: " + UserInputs[i].chname;
     chname.style.color = "white";
     information.appendChild(chname);
 
     
-    let quote = document.createElement("h3")
+    let quote = document.createElement("p")
     quote.classList.add("theImage");
 
-    quote.textContent = UserInputs[i].quote;
+    quote.textContent = '"' + UserInputs[i].quote + '"';
     
   quote.style.color = "white";
     information.appendChild(quote);
@@ -92,15 +95,14 @@ function handler(e){
 
 function storeIntoLocalStorage() {
  
-  // convert JS to JSON 
   let jsonObjArray = JSON.stringify(UserInputs);
   window.localStorage.setItem("characters", jsonObjArray);
 }
 
 function readFromLocalStorage() {
-  // read the json Array From LS 
+  
   let jsonArray = window.localStorage.getItem("characters");
-  // convert the JSON to JS 
+ 
   let objArray = JSON.parse(jsonArray);
   console.log("Array after read From LS before the re-intantiation => ", objArray);
 

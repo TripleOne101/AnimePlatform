@@ -26,9 +26,8 @@ html {
 }
 
 .Sound {
-margin-left: 20px;
-margin-top: -20px;
-
+margin-left: 32px;
+margin-top: 80px;
 
 }
 #sound-icon {
@@ -601,7 +600,6 @@ margin-top: -20px;
         498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-
 @keyframes animStar {
     from {
         transform: translateY(0px);
@@ -611,7 +609,6 @@ margin-top: -20px;
         transform: translateY(-2000px);
     }
 } 
-
 
 
 
@@ -626,66 +623,131 @@ margin-top: -20px;
   overflow-x: hidden; /* Hide horizontal overflow */
   }
 
-  
-  ul {
-    display: flex;
-    gap: 2.55em;
-    color: #fff;
-    list-style: none;
-    position: absolute;
-    left: 63.39%;
-    right: 1.4%;
-    top: 12.5%;
-    bottom:  77.50%;
-}
-li {
-    display: block;
-    transition: 0.5s;
-}
-ul:hover li {
-    filter: blur(5px);
-}
-ul li:hover {
-    filter: blur(0);
-}
-.header nav {
-    background: transparent;
-}
-.header .login-icon::before {
-    content: "\f007";
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 900;
-   
-}
-header {
+  nav {
+    padding: 30px;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    color: #fff;
-    color: #1A223B;
+    justify-content: space-between;
+    position: relative;
   }
-  .logo img {
-    width: 100px;
+  
+  .logo {
+    width: 160px;
   }
+  
   nav ul {
+    width: 100%;
+    text-align: right;
     display: flex;
-    list-style-type: none;
+    align-items: center;
+    justify-content: right;
+    position: relative;
   }
+  
   nav ul li {
-    margin-right: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+    transition: 0.5s;
   }
+  
+  /*blur header*/
+  ul:hover li {
+    filter: blur(5px);
+  }
+  
+  ul li:hover {
+    filter: blur(0);
+  }
+  
   nav ul li a {
+    color: #fff;
+    text-decoration: none
+  }
+  
+  .gg-log-in {
+    cursor: pointer;
+  }
+  
+  .sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    width: 270px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .sub-menu-wrap.open-menu {
+    max-height: 400px;
+  }
+  
+  .sub-menu {
+    background: rgba(255, 255, 255, 0.455);
+    padding: 20px;
+    margin: 10px;
+  
+    border-radius: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info h2 {
+    font-weight: 500;
+  }
+  
+  .user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #0f0825;
+    margin: 15px 0 10px;
+  }
+  
+  .sub-menu-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    margin: 12px 0;
   }
-.title {
- text-align: center;
- color: white;
-}
-
-
+  
+  .sub-menu-link p {
+    width: 100%;
+    color: #06051f;
+  }
+  
+  .sub-menu-link i{
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .sub-menu-link span {
+    font-size: 22px;
+    color: #06051f;
+    transition: transform 0.5s;
+  }
+  
+  .sub-menu-link:hover span {
+    transform: translate(5px);
+  }
+  
+  .sub-menu-link:hover p {
+    font-weight: 600;
+  }
+  
 .mainimg {
   display: flex;
   justify-content: flex-end; 
@@ -702,7 +764,7 @@ header {
   max-width: 100%;
   height: auto;
   margin-right: 66px;
-  margin-top: -150px;
+  margin-top: -200zpx;
 }
 .mainimg {
 width: 80%;
@@ -713,7 +775,7 @@ main {
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top: -420px;
+margin-top: -330px;
 }
 .row {
 display: flex;
@@ -725,7 +787,6 @@ margin-bottom: 80px;
 
 margin: 10px 10px;
 }
-
 
 .card {
   width: var(--card-width);
@@ -840,7 +901,7 @@ form label {
 form input[type="text"] {
   width: 100%;
   padding: 10px;
-  background: #07182E;
+  background: #1a223b;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 10px;
@@ -861,7 +922,6 @@ border-radius: 10px;
 margin-top: 30px;
 }
 
-
 /* .quotes {
   display: flex;
   flex-wrap: wrap;
@@ -870,13 +930,11 @@ margin-top: 30px;
   margin-right: 40px;
 }
 
-
  .input-field {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
 }
-
 
 .cards {
   display: flex;
@@ -1013,9 +1071,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #07182E;
+  align-items: flex-start; 
+  text-align: left;
+  background: #1a223b;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 12px;
@@ -1030,7 +1088,6 @@ footer {
 .theName {
   margin-bottom: 10px;
 }
-
 
 .cards::before {
   content: "";
@@ -1094,8 +1151,8 @@ footer {
 
 .cards h3 {
   font-size: 18px;
-  font-weight: bold;
   color: #fff;
+  text-align: left;
 }
 
 #save {
@@ -1122,9 +1179,36 @@ footer {
 }
 
 footer {
-  margin-top: 500px;
-  margin-left: 20px;
-  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  color: #fff;
+
 }
 
+.footer-content {
+  margin-bottom: 10px;
+
+}
+
+.social_icons {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.social_icons a {
+  color: #fff;
+}
+
+.social_icons a:hover {
+  color: #fff;
+  color: #1a223b;
+}
 
