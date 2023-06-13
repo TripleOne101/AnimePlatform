@@ -24,6 +24,7 @@ function handler(e) {
     e.target.reset();
 
     //local storage
+    sessionStorage.setItem('userName', userName);
     window.localStorage.setItem('userEmail', userName);
     console.log(Movies[i].Id)
     console.log(`welcome ${currentUser}`)
@@ -31,3 +32,12 @@ function handler(e) {
 
 let submitUserData = document.getElementById('userForm');
 submitUserData.addEventListener('submit', handler)
+
+
+
+document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+
+    window.location.href = "index.html";
+  });
