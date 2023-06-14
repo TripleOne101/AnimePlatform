@@ -2,7 +2,6 @@
 
 let dropDown=document.getElementById("subMenu");
 let currentUserName=localStorage.getItem("userEmail");
-console.log(currentUserName);
 if (currentUserName==null){
     dropDown.innerHTML=` <div class="sub-menu">
     <div class="user-info">
@@ -50,7 +49,7 @@ function clearUser(){
 }
 
 const soundIcon = document.getElementById("sound-icon");
-const soundUrl = "js/sounds/mashup spacetoon songs -.mp3";
+const soundUrl = "assets/song/mashup spacetoon songs -.mp3";
 const audio = new Audio(soundUrl);
 let isPlaying = false;
 
@@ -104,8 +103,6 @@ function Input ( yourname, chname,quote,image) {
   quote.style.color = "white";
     information.appendChild(quote);
 
-    // let imageContainer = document.createElement("div");
-    // information.appendChild(imageContainer);
 
     let image = document.createElement("img")
     image.setAttribute('src', UserInputs[i].image);
@@ -154,10 +151,10 @@ function readFromLocalStorage() {
   let jsonArray = window.localStorage.getItem("characters");
  
   let objArray = JSON.parse(jsonArray);
-  console.log("Array after read From LS before the re-intantiation => ", objArray);
+
 
   if (objArray == null) {
-      console.log("The LS is Empty");
+
   } else {
       
 

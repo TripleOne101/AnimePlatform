@@ -310,25 +310,28 @@ waitForImages();
 // Card // 
 
 let moviesArr = []
-function movies(Id, Name, desc, category, type, image, backImage) {
-	this.Id = Id;
-	this.Name = Name;
-	this.desc = desc;
-	this.category = category
-	this.type = type;
-	this.image = image;
-	this.backImage = backImage;
-	moviesArr.push(this)
+function movies(Id, Name, desc, category, type, image, backImage,contant) {
+    this.Id = Id;
+    this.Name = Name;
+    this.desc = desc;
+    this.category = category
+    this.type = type;
+    this.image = image;
+    this.backImage = backImage;
+    this.contant = contant;
+    moviesArr.push(this)
 
 }
 
-
-let amime1 = new movies(1, "MAGIC AND MUSCLES", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard1.png", "");
-let amime2 = new movies(2, "HELL’S PARADDISE", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard2.png", "");
-let amime3 = new movies(3, "ATTACK ON TITAN", "In this magical world, one is easily identified as having magical abilities by a distinctive mark on their face. Those unable to practice magic are swiftly", "ACTION, COMEDY, FANTASY", "anime", "./assets/duaCard3.png", "");
-let amime4 = new movies(4, "maskman", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/6.png", "");
-let amime5 = new movies(5, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
-let amime6 = new movies(6, "naruto", "gggggggggggggggggggggggggggg", "drama", "anime", "./assets/charcter.png", "");
+let amime1 = new movies(1, "Naruto", "In a village where he was rejected for unknown reasons, Naruto Uzumaki, a young ninja who seeks to become the Hokage, the leader of his village", "Action Drama Shonen", "anime", "./assets/anime-1.png", "./assets/animeb-1.png","https://www.youtube.com/watch?v=QczGoCmX-pI&pp=ygUObmFydXRvIHRyYWlsZXI%3D");
+let amime2 = new movies(2, "One Piece", "Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named One Piece", "Action Adventure", "anime", "./assets/anime-2.png", "./assets/anime-2b.png","https://www.youtube.com/watch?v=LHTYpWI3S6Q&pp=ygURb25lIHBpZWNlIHRyYWlsZXI%3D");
+let amime3 = new movies(3, "Attack on Titan", "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.", "Action Adventure", "anime", "./assets/anime-3.png", "./assets/anime-3b.png","https://www.youtube.com/watch?v=LV-nazLVmgo&pp=ygUXYXR0YWNrIG9uIHRpdGFuIHRyYWlsZXI%3D");
+let amime4 = new movies(4, "Demon Slayer", "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.", "Action Adventure", "anime", "./assets/anime-4.png", "./assets/anime-4b.png");
+let amime5 = new movies(5, "Bleach", "The peace is suddenly broken when warning sirens blare through the Soul Society. Residents are disappearing without a trace and nobody knows who's behind it. Meanwhile, a darkness is approaching Ichigo and his friends in Karakura Town.", "Action Adventure", "anime", "./assets/anime-5.png", "./assets/anime-5b.png");
+let amime6 = new movies(6, "Vinland Saga", "Thorfinn pursues a journey with his father's killer in order to take revenge and end his life in a duel as an honorable warrior and pay his father a homage.", "Action Adventure", "anime", "./assets/anime-6.png", "");
+let amime7 = new movies(6, "Jujutsu Kaisen", "A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.", "Action Adventure", "anime", "./assets/anime-7.png", "");
+let amime8 = new movies(6, "Hunter x Hunter", "Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.", "Action Adventure", "anime", "./assets/anime-8.png", "");
+let amime9 = new movies(6, "Parasyte", "17-year-old Shinichi Izumi is partially infected by a Parasyte, monsters that butcher and consume humans. He must learn to co-exist with the creature if he is to survive both the life of a Parasyte and a human as part monster, part person.", "Action Drama", "anime", "./assets/anime-9.png", "");
 
 
 console.log("The Array drinsk added by user JS format => ", moviesArr);

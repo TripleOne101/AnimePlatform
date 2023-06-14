@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
 }
 body {
   margin: 0;
@@ -557,6 +557,10 @@ body {
   }
 } 
 
+main{
+  margin-top: 120px;
+}
+
 nav {
   padding: 30px;
   padding-bottom: 0;
@@ -564,7 +568,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .logo {
@@ -621,9 +625,10 @@ nav ul li a {
 }
 
 .sub-menu {
-  background: rgba(255, 255, 255, 0.455);
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   margin: 10px;
+
   border-radius: 10px;
 }
 
@@ -689,7 +694,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 5rem;
+
 }
 
 .card {
@@ -847,3 +852,10 @@ footer {
   text-align: center;
 }
 /*end footer styling*/
+.heading {
+
+text-align: center;
+  font-weight: 600;
+  font-size: 80px;
+  color: #FFFFFF;
+}
