@@ -10,6 +10,7 @@ function find(id) {
    let desc = document.getElementById('desc')
 
    List.forEach(function (value) {
+      console.log(value)
 
       if (value.Id == id) {
          document.getElementById("back-image").src = value.backImage;
@@ -38,7 +39,7 @@ function LikeThis(id) {
          <div class="card" id ="likeThisAnime">
          <div class="container">
            <img src="${elm.image}" alt="Avatar" style="width:100%;">
-           <button onclick="SupPlay(${elm.contant})" class="center">Play</button>
+           <button onclick="SupPlay('${elm.contant}')" class="center">Play</button>
          </div>
          <div class="card-details">
            <h4><b>Demon Slayer</b></h4>
@@ -50,6 +51,5 @@ function LikeThis(id) {
 }
 
 function SupPlay(url){
-   console.log(url)
    window.open(url)
 }

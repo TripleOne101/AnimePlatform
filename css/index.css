@@ -1328,6 +1328,7 @@ button:focus {
   border-radius: 16px;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .dh-card:hover {
@@ -1374,20 +1375,11 @@ button:focus {
 
 /* footer */
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
+
 
 .footer-content {
   margin-bottom: 10px;
+
 }
 
 .social_icons {
@@ -1400,11 +1392,32 @@ footer {
   color: #fff;
 }
 
-
 .social_icons a:hover {
   color: #fff;
   color: #1a223b;
 }
 
 
+
+footer {
+  height: 50px;
+  font-family: 'Josefin Sans';
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  bottom: 0;
+  display: table-row;
+  color: #fff;
+}
+
+/**** Trick: ****/
+
+body {
+  display: table;
+  width: 100%; 
+  padding-bottom: 0px;
+}
 

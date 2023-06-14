@@ -806,20 +806,18 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0px;
-
-  gap: 10px;
+  gap: 5px;
 
 }
 
 .card {
-  width: 250px; /* Decreased width */
-  height: 364px; /* Decreased height */
+  width: 360px;
+  height: 512px;
   background: #000f1b;
-  border: 2px solid #45f3ff;
-  border-radius: 6px;
+  border: 4px solid #45f3ff;
+  border-radius: 12px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
-
   transform: scale(0.8);
 
 }
@@ -845,7 +843,7 @@ button {
 .card img {
   opacity: 1;
   transition: 0.3s;
-  /* transform: scale(0.75); */
+  opacity: 1;
 }
 
 .center {
@@ -872,6 +870,7 @@ button {
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
   transform: scale(1.15);
+ 
 }
 
 .card:hover .center {
